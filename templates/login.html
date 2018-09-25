@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form action="" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username" title=""></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" name="password" title=""></td>
+                </tr>
+                <tr>
+                    <td>{{ froms.erros }}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="提交"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+{% endblock %}
